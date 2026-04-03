@@ -8,7 +8,7 @@ Although accurate head pose estimation is critical for natural human–computer 
 ## :rocket: Overview
 Figure 1 shows the overall architecture of the proposed MHPE model, which consists of two key components: 1) the AFG module and 2) the MRI module. The MRI module implements three processing stages: visual token representation, morphology token construction, and cross-region attention modeling. The AFG module first performs an adaptive interaction of the multi-view head images sampled from the input batch, generating augmented training samples. These samples undergo biomechanically constrained feature integration, where view-specific, shared, and composite features are combined using learnable spatial weighting. Subsequently, the MRI module establishes long-range dependencies between facial features through a cross-modal attention mechanism incorporating morphology morphological priors. Our architecture achieves dynamic feature enhancement based on head rotation, morphology-consistent spatial relationship modeling, and robust pose estimation under varying viewing conditions. Our framework significantly improves the accuracy of pose estimation while maintaining computational efficiency, especially in challenging situations involving extreme poses or partial occlusions.
 
-![Figure1](https://github.com/Qshijia/MHPE/blob/main/Figure1.png?raw=true)
+<img src="https://github.com/Qshijia/MHPE/blob/main/Figure1.png?raw=true" width="500">
 
 ##### Fig. 1. Overview of our proposed MHPE model that consists of two modules: AFG and MRI. The MRI module implements three processing stages: visual token representation, morphology token construction, and cross-region attention modeling.
 
